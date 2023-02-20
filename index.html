@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700;800;900&family=Roboto:wght@900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__social">
+            <a class="header__social-link" href="#">
+              <svg class="header__social-icon" width="16" height="16">
+                <use href="./images/symbol-defs.svg#icon-vk"></use>
+              </svg>
+            </a>
+            <a class="header__social-link" href="#">
+              <svg class="header__social-icon" width="16" height="16">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a class="header__social-link" href="#">
+              <svg class="header__social-icon" width="16" height="16">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="header__phone">
+            <a class="header__phone-link header__phone-link--red-phone" href="tel:74952553020">
+              +7 (495) 255-30-20
+            </a>
+            <a class="header__phone-link header__phone-link--wattsap" href="tel:79153599519">
+              +7 (915) 359-95-19
+            </a>
+          </div>
+        </div>
+        <div class="header__inner">
+          <nav class="header__nav">
+            <a class="logo" href="#">
+              <img src="./images/logo.svg" alt="logo">
+            </a>
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#">
+                  О центре
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">
+                  Онлайн обучение
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">
+                  Отзывы
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">
+                  База знатий
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__btn btn popup-link" href="#popup">
+            <svg class="header__btn-icon" width="20" height="20">
+              <use href="./images/symbol-defs.svg#icon-call"></use>
+            </svg>
+            Заказать звонок
+          </a>
+          <button class="header__menu-btn" type="button">
+            <span class="header__menu-line"></span>
+            <span class="sr-only">открыть меню</span>
+          </button>
+        </div>
+        <div class="mobile-menu">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">
+                О центре
+              </a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">
+                Онлайн обучение
+              </a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">
+                Отзывы
+              </a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">
+                База знаний
+              </a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <a class="mobile-menu__btn btn popup-link" href="#popup">
+            <svg class="mobile-menu__btn-icon" width="20" height="20">
+              <use href="./images/symbol-defs.svg#icon-call"></use>
+            </svg>
+            Заказать звонок
+          </a>
+          <div class="mobile-menu__phones">
+            <a class="mobile-menu__phone mobile-menu__phone--red-phone" href="tel:74952553020">
+              +7 (495) 255-30-20
+            </a>
+            <a class="mobile-menu__phone mobile-menu__phone--wattsap" href="tel:79153599519">
+              +7 (915) 359-95-19
+            </a>
+          </div>
+          <ul class="mobile-menu__socials">
+            <li class="mobile-menu__social__item">
+              <a class="mobile-menu__social-link" href="#">
+                <svg class="mobile-menu__social-icon" width="16" height="16">
+                  <use href="./images/symbol-defs.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu__social__item">
+              <a class="mobile-menu__social-link" href="#">
+                <svg class="mobile-menu__social-icon" width="16" height="16">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu__social__item">
+              <a class="mobile-menu__social-link" href="#">
+                <svg class="mobile-menu__social-icon" width="16" height="16">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="popup" id="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a href="#header" class="close popup__close close-popup">
+          <span class="close__line"></span>
+        </a>
+        <div class="popup__box">
+          <h2 class="popup__title">
+            Подача заявки
+          </h2>
+          <p class="popup__text">
+            Оставьте свои контактные данные и наш менеджер свяжется с Вами в ближайшее время
+          </p>
+          <form class="popup__form">
+            <label class="popup__label">
+              Ваше имя и фамилия
+              <input class="popup__input" type="text" placeholder="Имя и Фамилия">
+            </label>
+            <label class="popup__label">
+              Ваш телефон/whatsapp
+              <input class="popup__input" type="tel" placeholder="Телефон/Whatsapp">
+            </label>
+            <label class="popup__label">
+              Ваш e-mail
+              <input class="popup__input" type="email" placeholder="E-mail">
+            </label>
+            <button class="popup__btn btn btn--long" type="submit">
+              Подать заявку
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <h1 class="sr-only">Курсы английского языка Simple</h1>
+    <section class="main">
+      <div class="container">
+        <div class="main__wrapper">
+          <div class="main__inner">
+            <p class="main__text">
+              Мы работаем онлайн ежедневно только для вас!
+            </p>
+            <h2 class="main__title">
+              Начните говорить
+              по-английски уже
+              <span class="main__subtitle">
+                через 2 месяца
+              </span>
+            </h2>
+            <div class="main__box">
+              <a class="main__btn btn popup-link" href="#popup">
+                Записаться на пробный урок
+              </a>
+            </div>
+          </div>
+          <img class="main__img" src="./images/main.jpg" alt="ноутбук" width="542">
+        </div>
+      </div>
+    </section>
+
+    <section class="greeting section">
+      <div class="container">
+        <h2 class="title">
+          <span class="subtitle">
+            Приветствие
+          </span>
+          Давайте знакомиться!
+        </h2>
+        <div class="greeting__box">
+          <a class="greeting__link" href="#">
+            <div class="greeting__img-box">
+              <img class="greeting__img" src="images/greet.jpg" alt="мужчина">
+            </div>
+            <svg class="greeting__link-icon" width="80" height="80">
+              <use href="./images/symbol-defs.svg#icon-play-greet"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="program section">
+      <div class="container">
+        <h2 class="title">
+          <span class="subtitle">
+            ПРОГРАММЫ
+          </span>
+          Наши программы обучения:
+        </h2>
+        <ul class="program__list">
+          <li class="program__item">
+            <article class="program__item-card">
+              <div class="program__box">
+                <span class="program__price">
+                  <div class="program__quantity">
+                    690
+                  </div>
+                  руб
+                </span>
+                <p class="program__text">
+                  7 дней доступа ко
+                  всем онлайн курсам
+                </p>
+              </div>
+              <div class="program__inner">
+                <span class="program__check">
+                  Проверочный тест
+                </span>
+                <span class="program__check">
+                  Курсы от А1 до В1
+                </span>
+                <span class="program__check">
+                  Интересные упражнения
+                </span>
+                <span class="program__check">
+                  Подсказки экспертов
+                </span>
+                <span class="program__check">
+                  Разговорный клуб
+                </span>
+              </div>
+              <div class="program__links">
+                <a class="program__btn btn btn--long popup-link" href="#popu#popup">
+                  Получить
+                </a>
+                <a class="program__link" href="#">
+                  <svg class="program__link-icon" width="16" height="16">
+                    <use href="./images/symbol-defs.svg#icon-play"></use>
+                  </svg>
+                  Смотреть презентацию
+                </a>
+              </div>
+            </article>
+          </li>
+
+          <li class="program__item">
+            <article class="program__item-card">
+              <div class="program__box">
+                <span class="program__price">
+                  от
+                  <div class="program__quantity">
+                    1190
+                  </div>
+                  руб./урок
+                </span>
+                <p class="program__text">
+                  Индивидуальные уроки
+                  по Skype
+                </p>
+              </div>
+              <div class="program__inner">
+                <span class="program__check">
+                  Бесплатный доступ к онлайн-порталу
+                </span>
+                <span class="program__check">
+                  Любой уровень за 32 урока
+                </span>
+                <span class="program__check">
+                  Вы выбираете преподавателя
+                </span>
+                <span class="program__check">
+                  Вы выбираете время занятий
+                </span>
+              </div>
+              <div class="program__links">
+                <a class="program__btn btn btn--long popup-link" href="#popup">
+                  Записаться
+                </a>
+                <a class="program__link" href="#">
+                  <svg class="program__link-icon" width="16" height="16">
+                    <use href="./images/symbol-defs.svg#icon-play"></use>
+                  </svg>
+                  Смотреть презентацию
+                </a>
+              </div>
+
+            </article>
+
+          </li>
+
+          <li class="program__item">
+            <article class="program__item-card">
+              <div class="program__box">
+                <span class="program__price">
+                  от
+                  <div class="program__quantity">
+                    15000
+                  </div>
+                  руб./курс
+                </span>
+                <p class="program__text">
+                  Английский в группе онлайн
+                  за 3 месяца
+                </p>
+              </div>
+              <div class="program__inner">
+                <span class="program__check">
+                  24 онлайн-занятия по 90 минут
+                </span>
+                <span class="program__check">
+                  Интерактивные учебные материалы
+                </span>
+                <span class="program__check">
+                  Бесплатный доступ к онлайн-порталу
+                </span>
+                <span class="program__check">
+                  Закрытый форум для общения
+                </span>
+              </div>
+              <div class="program__links">
+                <a class="program__btn btn btn--long popup-link" href="#popup">
+                  Записаться
+                </a>
+                <a class="program__link" href="#">
+                  <svg class="program__link-icon" width="16" height="16">
+                    <use href="./images/symbol-defs.svg#icon-play"></use>
+                  </svg>
+                  Смотреть презентацию
+                </a>
+              </div>
+
+            </article>
+
+          </li>
+
+          <li class="program__item">
+            <article class="program__item-card">
+              <div class="program__box">
+                <span class="program__name">
+                  Корпоративное обучение
+                </span>
+                <p class="program__text">
+                  Специальный курс обучения сотрудников
+                </p>
+              </div>
+              <div class="program__inner">
+                <span class="program__check">
+                  Обучение по уникальной программе TÖMER
+                </span>
+                <span class="program__check">
+                  Оригинальные учебные материалы
+                </span>
+                <span class="program__check">
+                  Интерактивные материалы в личном кабинете
+                </span>
+                <span class="program__check">
+                  Скидка на индивидуальные занятия
+                </span>
+              </div>
+              <div class="program__links">
+                <a class="program__btn btn btn--long popup-link" href="#popup">
+                  Подробнее
+                </a>
+                <a class="program__link" href="#">
+                  <svg class="program__link-icon" width="16" height="16">
+                    <use href="./images/symbol-defs.svg#icon-play"></use>
+                  </svg>
+                  Смотреть презентацию
+                </a>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="license section">
+      <div class="container">
+        <div class="license__wrapper">
+          <img class="license__img" src="./images/license.jpg" alt="лицензия">
+          <div class="license__inner">
+            <h2 class="license__title">
+              Simple - лицензированное образовательное учреждение
+            </h2>
+            <p class="license__text">
+              Имеем лицензию министерства образования РФ и специализируемся только на преподавании английского языка и
+              русского языка.
+            </p>
+            <a class="license__btn btn popup-link" href="#popup">
+              Записаться
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners section">
+      <div class="container">
+        <h2 class="title">
+          <span class="subtitle">
+            ПАРТНЕРЫ
+          </span>
+          Наши услуги оценили:
+        </h2>
+        <ul class="partners__list">
+          <li class="partners__item">
+            <img class="partners__img" src="./images/partners/turkish.png" alt="логотип комании-партнёра">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="./images/partners/renaissance.png" alt="логотип комании-партнёра">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="./images/partners/ennka.png" alt="логотип комании-партнёра">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="./images/partners/real.png" alt="логотип комании-партнёра">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="./images/partners/auchan.png" alt="логотип комании-партнёра">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="./images/partners/koroleva.png" alt="логотип комании-партнёра">
+          </li>
+        </ul>
+
+        <div class="subscribe">
+          <p class="subscribe__text">
+            Подпишись на 10 бесплатных уроков «Английский базар» в email рассылке для комфортного общения
+          </p>
+          <a class="btn popup-link" href="#popup">Подписаться</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="course section">
+      <div class="container">
+        <h2 class="title">
+          <span class="subtitle">
+            курсы
+          </span>
+          Общий курс английского языка:
+        </h2>
+        <ul class="course__tabs">
+          <li class="course__tab">
+            <a class="course__tab-link course__tab-link--current" href="#tab1">
+              А1 - начальный уровень
+            </a>
+          </li>
+          <li class="course__tab">
+            <a class="course__tab-link" href="#tab2">
+              А2
+            </a>
+          </li>
+          <li class="course__tab">
+            <a class="course__tab-link" href="#tab3">
+              B1
+            </a>
+          </li>
+          <li class="course__tab">
+            <a class="course__tab-link" href="#tab4">
+              B2
+            </a>
+          </li>
+          <li class="course__tab">
+            <a class="course__tab-link" href="#tab5">
+              C1
+            </a>
+          </li>
+        </ul>
+        <div class="course__wrapper course__wrapper--active" id="tab1">
+          <h3 class="course__title">
+            ЧТО ВЫ БУДЕТЕ УМЕТЬ ПОСЛЕ ПРОХОЖДЕНИЯ НАЧАЛЬНОГО УРОВНЯ А1:
+          </h3>
+          <p class="course__text">
+            По окончании данного уровня Вы можете простыми предложениями рассказать о себе, о своей семье, о своих
+            друзьях, о
+            работе, описать, что Вы любите и не любите делать, умеете спрашивать и отвечать который час, использовать
+            цифры от 1 до
+            1 000, можете поддержать беседу на бытовые темы (ресторан, магазин, улица), задать простые вопросы
+            собеседнику или
+            ответить самому на темы, связанные с аспектами бытовой жизни: об отдыхе, о еде и напитках, о ежедневных
+            делах. Можете
+            написать простые предложения с приветствиями и поздравлениями друзьям и близким.
+          </p>
+          <div class="course__inner">
+            <div class="course__box">
+              <h4 class="course__subtitle">
+                ДЛЯ СПРАВКИ
+              </h4>
+              <ul class="course__features">
+                <li class="course__feature-name">
+                  <span class="course__feature">
+                    Длительность курса:
+                  </span>
+                  <span class="course__feature-quantity">
+                    64 академических часа
+                  </span>
+                </li>
+                <li class="course__feature-name">
+                  <span class="course__feature">
+                    Длительность занятия:
+                  </span>
+                  <span class="course__feature-quantity">
+                    2 ак.часа (90 минут)
+                  </span>
+                </li>
+                <li class="course__feature-name">
+                  <span class="course__feature">
+                    Уровень подготовки:
+                  </span>
+                  <span class="course__feature-quantity">
+                    законченный уровень А1
+                  </span>
+                </li>
+                <li class="course__feature-name">
+                  <span class="course__quantity">
+                    В случае, если вы не освоите материал курса, то сможете пройти его повторно по гарантии качества
+                    абсолютно бесплатно
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="course__box">
+              <h4 class="course__subtitle">
+                СТРУКТУРА КУРСА
+              </h4>
+              <ul class="course__skills">
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Говорение -
+                    <span class="course__progress-quantity">
+                      40%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 40%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Грамматика -
+                    <span class="course__progress-quantity">
+                      20%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 20%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Аудирование -
+                    <span class="course__progress-quantity">
+                      20%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 20%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Чтение -
+                    <span class="course__progress-quantity">
+                      10%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 10%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Письмо -
+                    <span class="course__progress-quantity">
+                      10%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 10%;"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="course__box">
+              <h4 class="course__subtitle">
+                УЧЕБНЫЕ МАТЕРИАЛЫ
+              </h4>
+              <img class="course__img" src="./images/book.jpg" alt="учебник">
+            </div>
+          </div>
+        </div>
+        <div class="course__wrapper" id="tab2">
+          <h3 class="course__title">
+            ЧТО ВЫ БУДЕТЕ УМЕТЬ ПОСЛЕ ПРОХОЖДЕНИЯ УРОВНЯ А2:
+          </h3>
+          <p class="course__text">
+            По окончании данного уровня Вы можете простыми предложениями рассказать о себе, о своей семье, о своих
+            друзьях, о
+            работе, описать, что Вы любите и не любите делать, умеете спрашивать и отвечать который час, использовать
+            цифры от 1 до
+            1 000, можете поддержать беседу на бытовые темы (ресторан, магазин, улица), задать простые вопросы
+            собеседнику или
+            ответить самому на темы, связанные с аспектами бытовой жизни: об отдыхе, о еде и напитках, о ежедневных
+            делах. Можете
+            написать простые предложения с приветствиями и поздравлениями друзьям и близким.
+          </p>
+          <div class="course__inner">
+            <div class="course__box">
+              <h4 class="course__subtitle">
+                ДЛЯ СПРАВКИ
+              </h4>
+              <ul class="course__features">
+                <li class="course__feature-name">
+                  <span class="course__feature">
+                    Длительность курса:
+                  </span>
+                  <span class="course__feature-quantity">
+                    72 академических часа
+                  </span>
+                </li>
+                <li class="course__feature-name">
+                  <span class="course__feature">
+                    Длительность занятия:
+                  </span>
+                  <span class="course__feature-quantity">
+                    2 ак.часа (90 минут)
+                  </span>
+                </li>
+                <li class="course__feature-name">
+                  <span class="course__feature">
+                    Уровень подготовки:
+                  </span>
+                  <span class="course__feature-quantity">
+                    законченный уровень А2
+                  </span>
+                </li>
+                <li class="course__feature-name">
+                  <span class="course__quantity">
+                    В случае, если вы не освоите материал курса, то сможете пройти его повторно по гарантии качества
+                    абсолютно бесплатно
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="course__box">
+              <h4 class="course__subtitle">
+                СТРУКТУРА КУРСА
+              </h4>
+              <ul class="course__skills">
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Говорение -
+                    <span class="course__progress-quantity">
+                      50%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 50%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Грамматика -
+                    <span class="course__progress-quantity">
+                      35%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 35%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Аудирование -
+                    <span class="course__progress-quantity">
+                      35%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 35%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Чтение -
+                    <span class="course__progress-quantity">
+                      40%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 40%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Письмо -
+                    <span class="course__progress-quantity">
+                      40%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 40%;"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="course__box">
+              <h4 class="course__subtitle">
+                УЧЕБНЫЕ МАТЕРИАЛЫ
+              </h4>
+              <img class="course__img" src="./images/book.jpg" alt="учебник">
+            </div>
+          </div>
+        </div>
+        <div class="course__wrapper" id="tab3">
+          <h3 class="course__title">
+            ЧТО ВЫ БУДЕТЕ УМЕТЬ ПОСЛЕ ПРОХОЖДЕНИЯ УРОВНЯ B1:
+          </h3>
+          <p class="course__text">
+            По окончании данного уровня Вы можете простыми предложениями рассказать о себе, о своей семье, о своих
+            друзьях, о
+            работе, описать, что Вы любите и не любите делать, умеете спрашивать и отвечать который час, использовать
+            цифры от 1 до
+            1 000, можете поддержать беседу на бытовые темы (ресторан, магазин, улица), задать простые вопросы
+            собеседнику или
+            ответить самому на темы, связанные с аспектами бытовой жизни: об отдыхе, о еде и напитках, о ежедневных
+            делах. Можете
+            написать простые предложения с приветствиями и поздравлениями друзьям и близким.
+          </p>
+          <div class="course__inner">
+            <div class="course__box">
+              <h4 class="course__subtitle">
+                ДЛЯ СПРАВКИ
+              </h4>
+              <ul class="course__features">
+                <li class="course__feature-name">
+                  <span class="course__feature">
+                    Длительность курса:
+                  </span>
+                  <span class="course__feature-quantity">
+                    64 академических часа
+                  </span>
+                </li>
+                <li class="course__feature-name">
+                  <span class="course__feature">
+                    Длительность занятия:
+                  </span>
+                  <span class="course__feature-quantity">
+                    2 ак.часа (90 минут)
+                  </span>
+                </li>
+                <li class="course__feature-name">
+                  <span class="course__feature">
+                    Уровень подготовки:
+                  </span>
+                  <span class="course__feature-quantity">
+                    законченный уровень А1
+                  </span>
+                </li>
+                <li class="course__feature-name">
+                  <span class="course__quantity">
+                    В случае, если вы не освоите материал курса, то сможете пройти его повторно по гарантии качества
+                    абсолютно бесплатно
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="course__box">
+              <h4 class="course__subtitle">
+                СТРУКТУРА КУРСА
+              </h4>
+              <ul class="course__skills">
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Говорение -
+                    <span class="course__progress-quantity">
+                      40%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 40%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Грамматика -
+                    <span class="course__progress-quantity">
+                      20%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 20%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Аудирование -
+                    <span class="course__progress-quantity">
+                      20%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 20%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Чтение -
+                    <span class="course__progress-quantity">
+                      10%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 10%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Письмо -
+                    <span class="course__progress-quantity">
+                      10%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 10%;"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="course__box">
+              <h4 class="course__subtitle">
+                УЧЕБНЫЕ МАТЕРИАЛЫ
+              </h4>
+              <img class="course__img" src="./images/book.jpg" alt="учебник">
+            </div>
+          </div>
+        </div>
+        <div class="course__wrapper" id="tab4">
+          <h3 class="course__title">
+            ЧТО ВЫ БУДЕТЕ УМЕТЬ ПОСЛЕ ПРОХОЖДЕНИЯ УРОВНЯ B2:
+          </h3>
+          <p class="course__text">
+            По окончании данного уровня Вы можете простыми предложениями рассказать о себе, о своей семье, о своих
+            друзьях, о
+            работе, описать, что Вы любите и не любите делать, умеете спрашивать и отвечать который час, использовать
+            цифры от 1 до
+            1 000, можете поддержать беседу на бытовые темы (ресторан, магазин, улица), задать простые вопросы
+            собеседнику или
+            ответить самому на темы, связанные с аспектами бытовой жизни: об отдыхе, о еде и напитках, о ежедневных
+            делах. Можете
+            написать простые предложения с приветствиями и поздравлениями друзьям и близким.
+          </p>
+          <div class="course__inner">
+            <div class="course__box">
+              <h4 class="course__subtitle">
+                ДЛЯ СПРАВКИ
+              </h4>
+              <ul class="course__features">
+                <li class="course__feature-name">
+                  <span class="course__feature">
+                    Длительность курса:
+                  </span>
+                  <span class="course__feature-quantity">
+                    64 академических часа
+                  </span>
+                </li>
+                <li class="course__feature-name">
+                  <span class="course__feature">
+                    Длительность занятия:
+                  </span>
+                  <span class="course__feature-quantity">
+                    2 ак.часа (90 минут)
+                  </span>
+                </li>
+                <li class="course__feature-name">
+                  <span class="course__feature">
+                    Уровень подготовки:
+                  </span>
+                  <span class="course__feature-quantity">
+                    законченный уровень А1
+                  </span>
+                </li>
+                <li class="course__feature-name">
+                  <span class="course__quantity">
+                    В случае, если вы не освоите материал курса, то сможете пройти его повторно по гарантии качества
+                    абсолютно бесплатно
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="course__box">
+              <h4 class="course__subtitle">
+                СТРУКТУРА КУРСА
+              </h4>
+              <ul class="course__skills">
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Говорение -
+                    <span class="course__progress-quantity">
+                      40%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 40%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Грамматика -
+                    <span class="course__progress-quantity">
+                      20%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 20%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Аудирование -
+                    <span class="course__progress-quantity">
+                      20%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 20%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Чтение -
+                    <span class="course__progress-quantity">
+                      10%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 10%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Письмо -
+                    <span class="course__progress-quantity">
+                      10%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 10%;"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="course__box">
+              <h4 class="course__subtitle">
+                УЧЕБНЫЕ МАТЕРИАЛЫ
+              </h4>
+              <img class="course__img" src="./images/book.jpg" alt="учебник">
+            </div>
+          </div>
+        </div>
+        <div class="course__wrapper" id="tab5">
+          <h3 class="course__title">
+            ЧТО ВЫ БУДЕТЕ УМЕТЬ ПОСЛЕ ПРОХОЖДЕНИЯ УРОВНЯ C1:
+          </h3>
+          <p class="course__text">
+            По окончании данного уровня Вы можете простыми предложениями рассказать о себе, о своей семье, о своих
+            друзьях, о
+            работе, описать, что Вы любите и не любите делать, умеете спрашивать и отвечать который час, использовать
+            цифры от 1 до
+            1 000, можете поддержать беседу на бытовые темы (ресторан, магазин, улица), задать простые вопросы
+            собеседнику или
+            ответить самому на темы, связанные с аспектами бытовой жизни: об отдыхе, о еде и напитках, о ежедневных
+            делах. Можете
+            написать простые предложения с приветствиями и поздравлениями друзьям и близким.
+          </p>
+          <div class="course__inner">
+            <div class="course__box">
+              <h4 class="course__subtitle">
+                ДЛЯ СПРАВКИ
+              </h4>
+              <ul class="course__features">
+                <li class="course__feature-name">
+                  <span class="course__feature">
+                    Длительность курса:
+                  </span>
+                  <span class="course__feature-quantity">
+                    64 академических часа
+                  </span>
+                </li>
+                <li class="course__feature-name">
+                  <span class="course__feature">
+                    Длительность занятия:
+                  </span>
+                  <span class="course__feature-quantity">
+                    2 ак.часа (90 минут)
+                  </span>
+                </li>
+                <li class="course__feature-name">
+                  <span class="course__feature">
+                    Уровень подготовки:
+                  </span>
+                  <span class="course__feature-quantity">
+                    законченный уровень А1
+                  </span>
+                </li>
+                <li class="course__feature-name">
+                  <span class="course__quantity">
+                    В случае, если вы не освоите материал курса, то сможете пройти его повторно по гарантии качества
+                    абсолютно бесплатно
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="course__box">
+              <h4 class="course__subtitle">
+                СТРУКТУРА КУРСА
+              </h4>
+              <ul class="course__skills">
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Говорение -
+                    <span class="course__progress-quantity">
+                      40%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 40%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Грамматика -
+                    <span class="course__progress-quantity">
+                      20%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 20%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Аудирование -
+                    <span class="course__progress-quantity">
+                      20%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 20%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Чтение -
+                    <span class="course__progress-quantity">
+                      10%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 10%;"></div>
+                  </div>
+                </li>
+                <li class="course__progress-bar">
+                  <div class="course__progress-name">
+                    Письмо -
+                    <span class="course__progress-quantity">
+                      10%
+                    </span>
+                  </div>
+                  <div class="course__progress">
+                    <div class="course__progress-line" style="width: 10%;"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="course__box">
+              <h4 class="course__subtitle">
+                УЧЕБНЫЕ МАТЕРИАЛЫ
+              </h4>
+              <img class="course__img" src="./images/book.jpg" alt="учебник">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lecturer section">
+      <div class="container">
+        <h2 class="title">
+          <span class="subtitle">
+            преподаватели
+          </span>
+          Наши преподаватели английского языка:
+        </h2>
+
+        <div class="lecturer__wrapper">
+          <div class="lecturer__inner">
+            <ul class="lecturer__list">
+              <li class="lecturer__item">
+                <img class="lecturer__img" src="images/teacher.jpg" alt="преподаватель">
+                <h3 class="lecturer__name">
+                  Озджан Бей
+                </h3>
+                <p class="lecturer__text">
+                  Здравствуйте!
+                  Меня зовут Озджан.
+                  Я работаю в языковом центре «Диалог» более 5 лет. За это время многие мои студенты научились очень
+                  хорошо говорить на
+                  моем родном и любимом турецком языке. Я веду групповые и индивидуальные занятия.
+                  Люблю, когда атмосфера на занятиях располагает к тому, чтобы обучение проходило легко, но эффективно.
+                  Жду вас в нашей школе!
+                </p>
+              </li>
+              <li class="lecturer__item">
+                <img class="lecturer__img" src="images/teacher.jpg" alt="преподаватель">
+                <h3 class="lecturer__name">
+                  Айдемир Бей
+                </h3>
+                <p class="lecturer__text">
+                  Здравствуйте, меня зовут Айдемир. Я турок, приехал из Стамбула, где учился и работал. В России живу
+                  более 12 лет. В
+                  Москве окончил РУДН. Работаю преподавателем более 8 лет, веду групповые и индивидуальные занятия. Моя
+                  работа позволяет
+                  мне каждый день помогать моим студентам осваивать основы турецкого языка и совершенствовать уже
+                  пройденный материал. Я
+                  очень рад, что многие из моих учеников в дальнейшем применяют свои знания на практике, как в работе
+                  так и для личного
+                  общения. Жду Вас на своих занятиях!
+                </p>
+              </li>
+              <li class="lecturer__item">
+                <img class="lecturer__img" src="images/teacher.jpg" alt="преподаватель">
+                <h3 class="lecturer__name">
+                  Ирина Ханым
+                </h3>
+                <p class="lecturer__text">
+                  Ведущий преподаватель курсов. Выпускница Анкарского Университета, педагог с большим опытом
+                  преподавания турецкого языка,
+                  профессиональный переводчик. Имеет изданные пособия по изучению турецкого языка. Использует
+                  собственные методики
+                  преподавания. Около 30 лет постоянно проживает в Турции , владеет языком на уровне носителя, регулярно
+                  участвует в
+                  конференциях и семинарах по развитию методик обучения турецкому языку иностранцам. Принимала
+                  непосредственное участие в
+                  создании учебника "Хитит", изданного языковым и исследовательским центром изучения и развития
+                  турецкого Tömer.
+              </li>
+              <li class="lecturer__item">
+                <img class="lecturer__img" src="images/teacher.jpg" alt="преподаватель">
+                <h3 class="lecturer__name">
+                  Озджан Бей
+                </h3>
+                <p class="lecturer__text">
+                  Здравствуйте!
+                  Меня зовут Озджан.
+                  Я работаю в языковом центре «Диалог» более 5 лет. За это время многие мои студенты научились очень
+                  хорошо говорить
+                  на
+                  моем родном и любимом турецком языке. Я веду групповые и индивидуальные занятия.
+                  Люблю, когда атмосфера на занятиях располагает к тому, чтобы обучение проходило легко, но эффективно.
+                  Жду вас в нашей школе!
+                </p>
+              </li>
+              <li class="lecturer__item">
+                <img class="lecturer__img" src="images/teacher.jpg" alt="преподаватель">
+                <h3 class="lecturer__name">
+                  Айдемир Бей
+                </h3>
+                <p class="lecturer__text">
+                  Здравствуйте, меня зовут Айдемир. Я турок, приехал из Стамбула, где учился и работал. В России живу
+                  более 12 лет. В
+                  Москве окончил РУДН. Работаю преподавателем более 8 лет, веду групповые и индивидуальные занятия. Моя
+                  работа
+                  позволяет
+                  мне каждый день помогать моим студентам осваивать основы турецкого языка и совершенствовать уже
+                  пройденный материал.
+                  Я
+                  очень рад, что многие из моих учеников в дальнейшем применяют свои знания на практике, как в работе
+                  так и для
+                  личного
+                  общения. Жду Вас на своих занятиях!
+                </p>
+              </li>
+            </ul>
+            <div class="dots"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ready section">
+      <div class=" container">
+        <div class="ready__wrapper">
+          <div class="ready__inner">
+            <h2 class="title title--left">
+              <span class="subtitle subtitle--left">
+                Что нужно?
+              </span>
+              Что нужно, чтобы начать?
+            </h2>
+            <ul class="ready__list">
+              <li class="ready__item">
+                <span class="ready__number">
+                  1.
+                </span>
+                Оставить заявку
+              </li>
+              <li class="ready__item">
+                <span class="ready__number">
+                  2.
+                </span>
+                Получить консультацию менеджера, который поможет вам
+                выбрать подходящий формат обучения и
+                сориентирует по условиям
+              </li>
+              <li class="ready__item">
+                <span class="ready__number">
+                  3.
+                </span>
+                Приступить к изучению прекрасного английского языка!
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="advantages section">
+      <div class="container">
+        <h2 class="title">
+          <span class="subtitle">
+            ПРЕИМУЩЕСТВА
+          </span>
+          Наши преимущества:
+        </h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--study">
+            <span class="advantages__subtitle">
+              12000 студентов
+            </span>
+            <p class="advantages__text">
+              За 16 лет мы обучили свободному общению
+            </p>
+          </li>
+          <li class="advantages__item advantages__item--moving">
+            <span class="advantages__subtitle">
+              1125 из них
+            </span>
+            <p class="advantages__text">
+              переехали на ПМЖ в Англоязычные страны
+            </p>
+          </li>
+          <li class="advantages__item advantages__item--job">
+            <span class="advantages__subtitle">
+              4169 студентов
+            </span>
+            <p class="advantages__text">
+              получили работу в английских компаниях
+            </p>
+          </li>
+        </ul>
+        <a class="advantages__btn btn popup-link" href="#popup">
+          Записаться на пробный урок
+        </a>
+      </div>
+    </section>
+
+    <section class="questions">
+      <div class="container">
+        <div class="questions__wrapper">
+          <div class="questions__inner">
+            <h2 class="questions__title">
+              Остались вопросы?
+            </h2>
+            <p class="questions__text">
+              Если у вас возникли какие-либо вопросы, пожалуйста, не стесняйтесь задать ваш вопрос. Наши менеджеры с
+              радостью дадут
+              всю необходимую информацию, подберут подходящий именно для вас вариант обучения, расскажут об актуальных
+              акциях и
+              выгодных предложениях. Ждем вас на занятиях!
+            </p>
+          </div>
+          <a class="btn btn--long popup-link" href="#popup">
+            Задать вопрос
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__content">
+            <a class="footer__logo logo" href="#">
+              <img src="./images/footer-logo.svg" alt="logo">
+            </a>
+            <p class="footer__text">
+              Копирование информации с сайта и ее размещение возможно только с ссылкой на данный ресурс.
+            </p>
+            <p class="footer__text">
+              Языковые курсы «Simple» © 2005 - 2023
+            </p>
+          </div>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                О центре
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Курсы
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Отзывы учеников
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                База знатий
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Узнать уровень английского
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Контакты
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Обучение в групппе
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Индивидуальные занятия
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Корпоративное обучение
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Онлайн-обучение
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                Курсы английского по Skype
+              </a>
+            </li>
+          </ul>
+          <div class="footer__info">
+            <address class="footer__address">
+              <span class="footer__info-title">
+                Адрес
+              </span>
+              г. Москва, пл. Тверская застава д. 3, 4 этаж, оф. 410
+            </address>
+            <div class="footer__time">
+              <span class="footer__info-title">
+                Время работы
+              </span>
+              Мы работаем ежедневно с 9:00 до 21:00
+            </div>
+            <div class="footer__contacts">
+              <span class="footer__info-title">
+                Контакты
+              </span>
+              <a class="footer__info-link footer__info-link--red-phone" href="tel:74952553020">
+                +7 (495) 255-30-20
+              </a>
+              <a class="footer__info-link footer__info-link--wattsap" href="tel:79153599519">
+                +7 (915) 359-95-19
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <svg class="footer__social-icon" width="16" height="16">
+                  <use href="./images/symbol-defs.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <svg class="footer__social-icon" width="16" height="16">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <svg class="footer__social-icon" width="16" height="16">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <svg class="footer__social-icon" width="16" height="16">
+                  <use href="./images/symbol-defs.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer__bottom-links">
+            <a class="footer__bottom-link" href="#">
+              Информация о платежах
+            </a>
+            <a class="footer__bottom-link" href="#">
+              Соглашение об обработке персональных данных
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
